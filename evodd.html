@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="lk">
+     <button onclick="data()"> click</button>
+    <script>
+         function data(){
+            event.preventDefault();
+let a = parseInt(document.getElementById('lk').value);
+if(a%2==0){
+    document.write("even");
+}else{
+    document.write("odd")
+}
+         }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket</title>
+    <style>
+        .ram{
+            border: 3px solid green;
+            padding: 20px;
+            margin: 15px;
+
+
+
+        }.oka{
+            margin: 10px;
+            padding: 10px;
+            font-size: 19px;
+
+        }.kl{
+            padding: 10px;
+            margin: 10px;
+            background-color: aqua;
+            border-radius: 8px;
+            font-size: 20px;
+
+        }.pl{
+            bottom: 18px solid green;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body><center>
+    <div class="ram">
+        <h1> TICKET SERVICE</h1>
+        <form >
+            <select name="" id="st" class="oka">
+                <option value="52">--select start</option>
+                <option value="53">Deoria</option>
+                <option value="54">Gorakhpur</option>
+                <option value="55">Salempur</option>
+                <option value="56">Lucknow</option>
+  </select>
+<label for="">To</label>
+<select name="" id="sp" class="oka">
+
+
+    <option value="52">--select stop</option>
+    <option value="53">Deoria</option>
+    <option value="54">Gorakhpur</option>
+    <option value="55">Salempur</option>
+    <option value="56">Lucknow</option>
+
+</select><br>
+<input type="date" class="oka"id="ab"><br>
+<button onclick="tic()" class="kl">print ticket</button>
+ </form>
+ <hr class="pl">
+ <h1> Your Ticket</h1>
+ <div style="text-align: left;">
+<h2><span>Start point  :</span><span id="s"></span></h2>
+<h2><span>Stop point  :</span><span id="s1"></span></h2>
+<h2><span>Price  :</span><span id="p"></span></h2>
+<h2><span>Date  :</span><span id="d"></span></h2>
+<h2><span>Distance  :</span><span id="di"></span></h2>
+
+
+ </div>
+ <button class="kl" onclick="window.print()">print</button>
+
+
+
+    </div></center>
+    <script>
+function tic(){
+    event.preventDefault();
+    let sta =parseInt(document.getElementById('st').value);
+    let sto =parseInt(document.getElementById('sp').value);
+    let date=document.getElementById('ab').value;
+
+    if(sta==53 &&sto==54){
+        document.getElementById('s').innerHTML="Deoria";
+        document.getElementById('s1').innerHTML="Goarkhpur";
+        document.getElementById('p').innerHTML="50";
+        document.getElementById('d').innerHTML="date";
+        document.getElementById('di').innerHTML="60km";
+    }
+    else if(sta==55 &&sto==56){
+        document.getElementById('s').innerHTML="salempur";
+        document.getElementById('s1').innerHTML="Lucknow";
+        document.getElementById('p').innerHTML="150";
+        document.getElementById('d').innerHTML="date";
+        document.getElementById('di').innerHTML="2000km";
+    }
+   // else if (sta==54 &&sto ==55){
+    //}else(sta==55&&sto==54){
+     //   document.getElementById('s').innerHTML="salempur";
+       /// document.getElementById('s1').innerHTML="Goarkhpur";
+       /// document.getElementById('p').innerHTML="50";
+      //  document.getElementById('d').innerHTML="date";
+        //document.getElementById('di').innerHTML="60km";
+    }
+    
+    
+
+
+    </script>
+</body>
+</html>

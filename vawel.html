@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="roa"maxlenth="1">
+    <button onclick="data()"> vowel</button>
+    <script>
+        function data (){
+        let name = document.getElementById('roa').value;
+
+        if (name === 'a' || name === 'e' || name === 'i' || name === 'o' || name === 'u' || name === 'A' || name === 'E' || name === 'I' || name === 'O' || name === 'U' ){
+            document.write("vowel");
+        } else {
+            document.write("consonant");
+        }}
+    </script>
+</body>
+
+</html>

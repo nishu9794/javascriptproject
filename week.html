@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week</title>
+</head>
+<body>
+    <input type="text" name="" id="jk">
+    <button onclick="data()"> click</button>
+    <script>
+        function data(){
+            event.preventDefault();
+let num= parseInt(document.getElementById('jk').value);
+switch(num){
+    case 1:
+        document.write("sunday");
+        break;
+        case 2:
+        document.write("monday");
+        break;
+        case 3:
+        document.write("tuesday");
+        break;
+        case 4:
+        document.write("wednesday");
+        break;
+        case 5:
+        document.write("thrusday");
+        break;
+        case 6:
+        document.write("friday");
+        break;
+        case 7:
+        document.write("saturday");
+        break;
+        default: alert("ina.");
+
+        
+}
+        }
+
+    </script>
+</body>
+</html>
